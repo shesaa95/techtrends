@@ -1,16 +1,12 @@
-# Default values for kubernetes-chart.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
 namespace:
   name: prod
 
 replicaCount: 5
 
 image:
-  repository: asheshanr/techtrends:latest
+  repository: asheshanr/techtrends
   pullPolicy: Always
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: latest
 
 service:
   type: ClusterIP
