@@ -1,3 +1,0 @@
-03-01 13:52 werkzeug     INFO      * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
-03-01 13:52 app          INFO     Main request successfull
-03-01 13:52 werkzeug     INFO     127.0.0.1 - - [01/Mar/2021 13:52:39] "[37mGET /about HTTP/1.1[0m" 200 -
