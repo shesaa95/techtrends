@@ -1,0 +1,22 @@
+03-17 10:18 werkzeug     INFO      * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+03-17 10:18 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:18:33] "GET / HTTP/1.1" 200 -
+03-17 10:18 app          INFO     03/17/2021, 10:18:35, Article "KubeCon + CloudNativeCon 2021" retrieved!
+03-17 10:18 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:18:35] "GET /2 HTTP/1.1" 200 -
+03-17 10:18 app          INFO     03/17/2021, 10:18:38, Article "CNCF Cloud Native Interactive Landscape" retrieved!
+03-17 10:18 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:18:38] "GET /4 HTTP/1.1" 200 -
+03-17 10:18 app          INFO     03/17/2021, 10:18:39, Article "CNCF Cloud Native Definition v1.0" retrieved!
+03-17 10:18 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:18:39] "GET /5 HTTP/1.1" 200 -
+03-17 10:18 app          INFO     03/17/2021, 10:18:42, Article "Kubernetes Certification" retrieved!
+03-17 10:18 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:18:42] "GET /6 HTTP/1.1" 200 -
+03-17 10:19 app          INFO     03/17/2021, 10:19:13, Article "CNCF Cloud Native Interactive Landscape" retrieved!
+03-17 10:19 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:19:13] "GET /4 HTTP/1.1" 200 -
+03-17 10:19 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:19:20] "GET /metrics HTTP/1.1" 200 -
+03-17 10:19 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:19:27] "GET /healthz HTTP/1.1" 200 -
+03-17 10:21 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:21:33] "GET /create HTTP/1.1" 200 -
+03-17 10:21 app          INFO     03/17/2021, 10:21:48, Article "Local Trial Post" created!
+03-17 10:21 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:21:48] "POST /create HTTP/1.1" 302 -
+03-17 10:21 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:21:49] "GET / HTTP/1.1" 200 -
+03-17 10:21 app          INFO     03/17/2021, 10:21:52, Article "Local Trial Post" retrieved!
+03-17 10:21 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:21:52] "GET /7 HTTP/1.1" 200 -
+03-17 10:23 werkzeug     INFO     127.0.0.1 - - [17/Mar/2021 10:23:16] "GET /12 HTTP/1.1" 404 -
+03-17 10:23 app          INFO     Article not found
