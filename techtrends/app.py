@@ -1,6 +1,7 @@
 import sqlite3
 import logging
 import datetime
+import sys
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 
@@ -111,19 +112,18 @@ if __name__ == "__main__":
         format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
         datefmt='%m-%d %H:%M',
         filename='app.log',
-        filemode='w')
+        filemode='w')        
 
-    # root_logger= logging.getLogger()
-    # root_logger.setLevel(logging.DEBUG) # or whatever
-    # handler = logging.FileHandler('test.log', 'w', 'utf-8') # or whatever
-    # handler.setFormatter(logging.Formatter('%(name)s %(message)s')) # or whatever
-    # root_logger.addHandler(handler)
-    
-    console = logging.StreamHandler()
-    console.setLevel(logging.INFO)
+    console_stdout_handler = logging.StreamHandler(sys.stdout)
+    console_stderr_handler = logging.StreamHandler(sys.stderr)
+    console_stdout_handler.setLevel(logging.INFO)
+    console_stderr_handler.setLevel(logging.INFO)
     formatter = logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s')
-    console.setFormatter(formatter)
-    logging.getLogger('').addHandler(console)
-    
+    console_stdout_handler.setFormatter(formatter)
+    console_stderr_handler.setFormatter(formatter)
+    logging.getLogger('').addHandler(console_stdout_handler)
+    logging.getLogger('').addHandler(console_stderr_handler)
+
+
 
     app.run(host='0.0.0.0', port='3111')
