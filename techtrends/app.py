@@ -116,8 +116,8 @@ if __name__ == "__main__":
 
     console_stdout_handler = logging.StreamHandler(sys.stdout)
     console_stderr_handler = logging.StreamHandler(sys.stderr)
-    console_stdout_handler.setLevel(logging.INFO)
-    console_stderr_handler.setLevel(logging.INFO)
+    console_stdout_handler.setLevel(logging.DEBUG)
+    console_stderr_handler.setLevel(logging.DEBUG)
     formatter = logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s')
     console_stdout_handler.setFormatter(formatter)
     console_stderr_handler.setFormatter(formatter)
