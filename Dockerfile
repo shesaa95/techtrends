@@ -15,5 +15,5 @@ WORKDIR /techtrends/app
 #     pip install --upgrade pip && \
 RUN pip install -r /techtrends/requirements.txt
 
-# This will rub a script that will run init_dp.py and app.py
+# This will run a script that will run init_dp.py and app.py
 CMD sh /techtrends/startup.sh
